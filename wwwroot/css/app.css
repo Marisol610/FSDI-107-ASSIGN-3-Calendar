@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+
+html, body{
+    background-image: url(../css/img/oceancaves.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    padding:0%;
+    margin:0%;
+    
+}
+
+body {
+   
+background-color:rgb(144, 23, 204) ; 
+min-height: 100vh;
+
+}
+header nav {
+    border: 1px solid black;
+    border-radius:  5px;
+    overflow: hidden;
+    box-shadow: -6px -6px 10px rgba(5, 4, 4, 0.03),
+                6px 6px 10px rgb(114, 119, 119),
+                inset -6px -6px 10px rgba(39, 39, 38, 0.03),
+                inset 6px 6px 10px rgb(247, 244, 246);
+    
+}
+
+/* Task list title */
+.content {
+
+   
+    position: relative;
+    margin-left: 130px;
+    margin-top: 115px;
+    
+}
+.content h2 {
+    
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 3.5rem;
+    
+
+}
+.content h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(248, 248, 239);
+}
+.content h2:nth-child(2) {
+    color: rgb(14, 32, 138);
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+    0%,100%
+{
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+}
+50%
+{
+    clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+}
+}
+/* Task List Title ends*/
+
+
+
+/* Task List input */
+
+.task {
+
+    display: flex;
+    background-color: rgba(255, 255, 255,0.5);
+    border: 1px solid grey;
+    color: rgb(5, 44, 80);
+    border-radius:  5px;
+    margin-top: 55px;
+    overflow: hidden;
+    margin-right: 400px;
+    margin-left: 20px;
+    
+    padding-top: 18px;
+    padding: 5px 5px;
+    width:70%;
+    box-shadow: -6px -6px 10px rgba(51, 15, 20, 0.03),
+                6px 6px 10px rgb(4, 145, 145),
+                inset -6px -6px 10px rgba(194, 96, 15, 0.03),
+                inset 6px 6px 10px rgb(175, 136, 172);
+    
+
+
+}
+
+
+
+h5 {
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(111, 23, 138);
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.task-section {
+    flex: 2;
+    display: flex;
+}
+
+.task-desc {
+    flex: 4;
+
+}
+#iconstar {
+    flex: 1;
+    color: rgb(68, 0, 255);
+}
+
+ #icontrash {
+    
+    color: rgb(177, 24, 164);
+    cursor: pointer;
+    
+}
+   /* Task List input ends*/ 
+
+
+
+
+
+
+h1 {
+    font-family: fantasy;
+    color: rgb(229, 255, 0);
+    text-align: center;
+    padding-top: 75px;
+    font-size: 3.5rem;
+}
+
+.secParent
+{
+    display: flex;
+}
+
+.section {
+   
+    flex:1;
+    vertical-align: top;
+    
+    
+}
+
+#secList {
+  
+    color: black;
+    width: 47%;
+    
+    
+    
+   
+    
+}
+/* Form Input fields and Control box*/
+#secForm {
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 53%;
+    border-style: ridge;
+    
+    
+    padding: 25px;
+    padding-top: 25px;
+    height: 100%;
+    box-shadow: -6px -6px 10px rgba(40, 82, 138, 0.03),
+                 6px 6px 10px rgb(77, 219, 219),
+                 inset -6px -6px 10px rgb(40, 82, 138, 0.03),
+                 inset 6px 6px 10px rgb(4, 145, 145);
+    
+    
+}
+
+.control {
+    display: block;
+    margin-bottom: 10px;
+    border:1px solid grey;
+    border-radius: 4px;
+   
+    padding: 10px 5px;
+    width:100%;
+}
+#txtTitle {
+    background: transparent;
+    border: none;;
+    color: yellow;
+    font-size: 16px;
+    width: 94%;
+    border-radius: 5px;
+    padding: 15px;
+    height: 50px;
+    padding: 0px 20px;
+    box-shadow: -6px -6px 10px rgba(40, 82, 138, 0.03),
+                 6px 6px 10px rgb(77, 219, 219),
+                 inset -6px -6px 10px rgba(40, 82, 138, 0.03),
+                 inset 6px 6px 10px rgb(4, 145, 145);
+    
+}
+
+#txtDate {
+    background: transparent;
+    border: none;;
+    color: rgb(48, 46, 44);
+    font-size: 16px;
+    width: 94%;
+    border-radius: 5px;
+    padding: 15px;
+    height: 50px;
+    padding: 0px 20px;
+    box-shadow: -6px -6px 10px rgba(40, 82, 138, 0.03),
+                 6px 6px 10px rgb(77, 219, 219),
+                 inset -6px -6px 10px rgba(40, 82, 138, 0.03),
+                 inset 6px 6px 10px rgb(4, 145, 145);
+    
+}
+
+#taskDescription {
+    background: transparent;
+    border: none;;
+    color: yellow;
+    font-size: 16px;
+    width: 94%;
+    border-radius: 5px;
+    padding: 15px;
+    height: 50px;
+    padding: 0px 20px;
+    box-shadow: -6px -6px 10px rgba(40, 82, 138, 0.03),
+                 6px 6px 10px rgb(77, 219, 219),
+                 inset -6px -6px 10px rgba(40, 82, 138, 0.03),
+                 inset 6px 6px 10px rgb(4, 145, 145);
+}
+
+#txtLocation {
+    background: transparent;
+    border: none;;
+    color: yellow;
+    font-size: 16px;
+    width: 94%;
+    border-radius: 5px;
+    padding: 15px;
+    height: 50px;
+    padding: 0px 20px;
+    box-shadow: -6px -6px 10px rgba(40, 82, 138, 0.03),
+                 6px 6px 10px rgb(77, 219, 219),
+                 inset -6px -6px 10px rgba(40, 82, 138, 0.03),
+                 inset 6px 6px 10px rgb(4, 145, 145);
+}
+
+/* Form Input fields and Control box ends*/
+
+
+#btnSave {
+    background-color: rgb(177, 24, 164);
+    color: seashell;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 300px;
+    margin-top: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#btnShowDetails {
+    background-color: rgb(177, 24, 164);
+    color: seashell;
+    font-size: 1rem;
+    font-weight: 300px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 25rem;
+
+}
+
+/* Task Information Title */
+h3 {
+    color: rgb(177, 24, 164);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#iconImp {
+    font-size: 24px;
+    float: right;
+    margin-right: 10pxpx;
+    color: rgb(229, 255, 0);
+}
+
+
+
+#iconImp.fas {
+    color: rgb(229, 255, 0);
+}
+/* Task Information Title ends */
+
+

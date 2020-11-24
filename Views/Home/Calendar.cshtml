@@ -1,0 +1,62 @@
+
+@section Styles {
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="/css/app.css">
+}
+
+<div class="secParent">
+    <div id="secList" class="section">
+
+            <div class="content">
+                <h2>My Task List</h2>
+                <h2>My Task List</h2>
+                
+            
+            </div>
+            
+            <div>
+
+                <button id="btnShowDetails" class="btn btn-primary">
+                    <i class="fas fa-eye"></i>
+                    Show Details
+                
+                </button>
+                
+            </div>
+            <div id="pendingTasks">
+
+            </div>
+    </div>
+
+    <div id="secForm" class="section">
+
+        <h3>Task Information</h3>
+
+        <div id="alertError" class="alert alert-danger">
+            Error: Please verify the title!!
+
+        </div>
+
+            <input id="txtTitle" type="text" class="control" placeholder="Task title">
+        <label>Is It Important?</label>
+        <i id="iconImp" class="far fa-star"></i>
+        
+        <input id="txtDate" type="datetime-local"  class="control" placeholder="Date">
+
+        <textarea id="taskDescription" class="control" placeholder="Task Description"></textarea>
+
+        <input id="txtLocation" type="text" class="control" placeholder="Location">
+
+        <button id="btnSave" class="btn btn-info">
+            <i class="fas fa-save"></i> Save Task</button>
+        <h1>Don't forget to be awesome today!</h1>
+
+    </div>
+
+
+</div>
+
+@section Scripts {
+<script src="/js/task.js"></script>
+<script src="/js/app.js"></script>
+}
